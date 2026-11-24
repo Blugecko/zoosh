@@ -5,7 +5,6 @@
     "@Blugecko"
   ],
   "config_flow": true,
-  "single_config_entry": true,
   "dependencies": [
     "frontend",
     "http",
@@ -15,5 +14,6 @@
   "integration_type": "service",
   "iot_class": "calculated",
   "issue_tracker": "https://github.com/Blugecko/zoosh/issues",
+  "single_config_entry": true,
   "version": "1.2.2"
 }
