@@ -1,0 +1,50 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Actions are pinned to a version tag (actions/* to a major tag, the HACS and hassfest
+# actions to their moving channel because their docs require it). TODO(owner): pin all
+# of them to full commit SHAs before publishing.
+jobs:
+  hassfest:
+    name: Hassfest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: home-assistant/actions/hassfest@master
+
+  hacs:
+    name: HACS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hacs/action@main
+        with:
+          category: integration
+
+  tests:
+    name: Standalone tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tests/test_yaml_gen.py
+      - run: python3 tests/test_automation.py
+      - run: python3 tests/test_runtime.py
+      - run: python3 tests/test_storage.py
+      - run: python3 tests/test_files.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node --check custom_components/zoosh/frontend/zoosh-panel.js
+      - run: node --check custom_components/zoosh/frontend/zoosh-fx.js
