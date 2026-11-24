@@ -1,0 +1,19 @@
+{
+  "domain": "zoosh",
+  "name": "Zoosh",
+  "codeowners": [
+    "@Blugecko"
+  ],
+  "config_flow": true,
+  "single_config_entry": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "panel_custom"
+  ],
+  "documentation": "https://github.com/Blugecko/zoosh",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/Blugecko/zoosh/issues",
+  "version": "1.2.2"
+}

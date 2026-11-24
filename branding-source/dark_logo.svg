@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502 224" width="502" height="224">
+<title>Zoosh logo</title>
+<g transform="translate(-14.1 -10.1) scale(0.46)"><defs>
+<linearGradient id="lbg" x1="0.05" y1="0" x2="0.95" y2="1"><stop offset="0" stop-color="#34497a" stop-opacity="0.80"/><stop offset="0.55" stop-color="#2a3a64" stop-opacity="0.80"/><stop offset="1" stop-color="#9a4a38" stop-opacity="0.82"/></linearGradient>
+<linearGradient id="lfrost" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3ec" stop-opacity="0.30"/><stop offset="0.5" stop-color="#fff3ec" stop-opacity="0.08"/><stop offset="1" stop-color="#fff3ec" stop-opacity="0.14"/></linearGradient>
+<linearGradient id="lsw" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f23f0d" stop-opacity="0.55"/><stop offset="0.35" stop-color="#f55a2a"/><stop offset="0.8" stop-color="#ff9a76"/><stop offset="1" stop-color="#fff3ec"/></linearGradient>
+<linearGradient id="ltr" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ff8a5c" stop-opacity="0"/><stop offset="0.6" stop-color="#ffb08f" stop-opacity="0.6"/><stop offset="1" stop-color="#fff3ec" stop-opacity="0.8"/></linearGradient>
+<linearGradient id="lrim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.4" stop-color="#8fc2ff" stop-opacity="0.35"/><stop offset="0.7" stop-color="#ffc2a8" stop-opacity="0.25"/><stop offset="1" stop-color="#ffb08f" stop-opacity="0.7"/></linearGradient>
+<linearGradient id="lsheen" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#fff3ec" stop-opacity="0.0"/><stop offset="0.5" stop-color="#fff3ec" stop-opacity="0.16"/><stop offset="1" stop-color="#fff3ec" stop-opacity="0.0"/></linearGradient>
+<filter id="lsh" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="12"/></filter>
+<filter id="lb8" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<filter id="lb3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="lb24" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="26"/></filter>
+<clipPath id="lclip"><rect x="48" y="40" width="416" height="416" rx="112"/></clipPath>
+</defs>
+<rect x="56" y="62" width="400" height="400" rx="108" fill="#0f1a33" fill-opacity="0.38" filter="url(#lsh)"/>
+<rect x="48" y="40" width="416" height="416" rx="112" fill="url(#lbg)"/>
+<rect x="48" y="40" width="416" height="416" rx="112" fill="url(#lfrost)"/>
+<g clip-path="url(#lclip)">
+<path d="M-60 440 L290 -40 L440 -40 L90 520 Z" fill="url(#lsheen)" transform="translate(40 0)"/>
+<rect x="48" y="40" width="416" height="416" rx="112" fill="none" stroke="#fff3ec" stroke-opacity="0.35" stroke-width="36" filter="url(#lb24)"/>
+<path d="M120 370 C210 350 330 300 400 130 C 330 330 240 400 120 370 Z" fill="#f23f0d" fill-opacity="0.65" filter="url(#lb24)"/>
+</g>
+<path d="M100 388 C196 356 344 296 414 96 C 410 280 290 436 100 388 Z" fill="url(#lsw)"/>
+<path d="M150 380 C250 352 340 290 392 150" fill="none" stroke="#fff3ec" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round" filter="url(#lb3)"/>
+<path d="M136 430 C290 414 410 320 436 178" fill="none" stroke="url(#ltr)" stroke-width="8" stroke-linecap="round"/>
+<rect x="49" y="41" width="414" height="414" rx="111" fill="none" stroke="#fff3ec" stroke-opacity="0.5" stroke-width="2"/>
+<rect x="52" y="44" width="408" height="408" rx="108" fill="none" stroke="url(#lrim)" stroke-width="6"/></g>
+<g transform="translate(228 49) scale(1.1)">
+<g transform="translate(0 0)" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 25 H31 L5 91 H26 Q31 91 31 85" stroke="#f23f0d"/></g>
+<g transform="translate(48 0)" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="25" width="26" height="66" rx="13" stroke="#fff3ec"/></g>
+<g transform="translate(96 0)" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="25" width="26" height="66" rx="13" stroke="#fff3ec"/></g>
+<g transform="translate(144 0)" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M27.89 31.00 A12 12 0 1 0 8.08 44.43 L28.21 69.95 A13 13 0 1 1 6.74 84.50" stroke="#fff3ec"/></g>
+<g transform="translate(191 0)" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9 V91 M5 38 A13 13 0 0 1 31 38 V91" stroke="#fff3ec"/></g>
+</g>
+</svg>

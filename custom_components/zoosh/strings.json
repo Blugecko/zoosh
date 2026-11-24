@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zoosh",
+        "description": "Adds a Zoosh panel to the sidebar for administrators. Select Submit to set it up."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Zoosh is already set up."
+    }
+  }
+}
