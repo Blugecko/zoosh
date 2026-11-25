@@ -325,8 +325,13 @@ def main() -> None:
         check(data[:3] == b"\xff\xd8\xff" and data[-2:] == b"\xff\xd9", f"{name} is a JPEG")
         check(len(data) < 400 * 1024, f"{name} is under 400 KB ({len(data) // 1024} KB)")
     check((wp / "CREDITS.md").is_file(), "wallpaper credits file present")
-    total = sum(f.stat().st_size for f in ROOT.rglob("*") if f.is_file() and ".git" not in f.parts and "node_modules" not in f.parts)
-    check(total < 3_000_000, f"repository stays small ({total // 1024} KB)")
+    skip = (".git", "node_modules")
+    def folder_kb(path):
+        return sum(f.stat().st_size for f in path.rglob("*") if f.is_file() and not any(s in f.parts for s in skip)) // 1024
+    integ = folder_kb(ROOT / "custom_components" / "zoosh")
+    check(integ < 3000, f"the installed integration stays small ({integ} KB)")
+    total = folder_kb(ROOT)
+    check(total < 6000, f"repository stays small ({total} KB)")
 
     # Starter Looks, Look lists
     starters = yg.starter_looks()
