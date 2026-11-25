@@ -4,7 +4,19 @@ Make Home Assistant feel alive: theme editor, card scale and animations, in one 
 
 **Version 1.2.2 (release candidate).** Zoosh adds an admin-only **Zoosh** item to the sidebar. Build complete themes ("Looks"), see them on a phone, tablet or desktop preview, add glass, shimmer and motion effects, and let Home Assistant switch Looks by time of day, by what a device is doing, or per person.
 
-> Screenshots: _placeholder, add `docs/looks.png`, `docs/preview.png`, `docs/automations.png` before publishing._
+![The Zoosh panel on a desktop, with the live tablet preview](docs/screenshots/panel-desktop.jpg)
+
+<p>
+  <img src="docs/screenshots/dashboard-desktop.jpg" alt="A Home Assistant dashboard using the default Glass look on a desktop" width="62%">
+  <img src="docs/screenshots/dashboard-phone.jpg" alt="The same look on a phone" width="22%">
+</p>
+
+<p>
+  <img src="docs/screenshots/panel-phone-look.jpg" alt="The Zoosh panel on a phone: Look tab" width="30%">
+  <img src="docs/screenshots/panel-phone-animations.jpg" alt="The Zoosh panel on a phone: Animations and Glass tab" width="30%">
+</p>
+
+_Screenshots show the default "Glass" look over the included wallpaper. Names and device labels are blurred._
 
 ## Features
 
